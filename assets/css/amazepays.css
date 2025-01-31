@@ -211,7 +211,7 @@ ul {
 /*--------------------------------------------------------------
 # Custom Cursor
 --------------------------------------------------------------*/
-.custom-cursor__cursor {
+/* .custom-cursor__cursor {
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -225,9 +225,9 @@ ul {
   -webkit-transform: translate(calc(-50% + 5px), -50%);
   transform: translate(calc(-50% + 5px), -50%);
   z-index: 999991;
-}
+} */
 
-.custom-cursor__cursor-two {
+/* .custom-cursor__cursor-two {
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -240,9 +240,9 @@ ul {
   -webkit-transition: width .3s, height .3s, opacity .3s;
   transition: width .3s, height .3s, opacity .3s;
   z-index: 999991;
-}
+} */
 
-.custom-cursor__hover {
+/* .custom-cursor__hover {
   background-color: var(--roofsie-base);
   opacity: 0.4;
 }
@@ -251,7 +251,7 @@ ul {
   width: 25px;
   height: 25px;
   opacity: .4;
-}
+} */
 
 
 .thm-btn {
@@ -11470,7 +11470,7 @@ color: black;
 .custom-page-header {
   position: relative;
   display: block;
-  padding: 131px 0 138px;
+  padding: 15rem 0 15rem;
   z-index: 1;
   overflow: hidden;
 }
@@ -11509,7 +11509,7 @@ color: black;
 }
 
 .custom-page-header__inner h2 {
-  font-size: 48px;
+  font-size: 60px;
   color: #fff;
   font-weight: 800;
   line-height: 58px;
@@ -11519,7 +11519,44 @@ color: black;
 .custom-thm-breadcrumb {
   position: relative;
   display: block;
-  color: white;
+  color: #d3d3d3;
+}
+/* @media (min-width: 768px) {
+  .custom-page-header {
+    position: relative;
+    display: block;
+    padding: 7rem 0 10rem;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .custom-page-header__inner h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 3rem;
+    margin-top: 9px;
+  }
+} */
+@media (max-width: 480px) {
+  .custom-page-header {
+    position: relative;
+    display: block;
+    padding: 7rem 0 10rem;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .custom-page-header__inner h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 3rem;
+    margin-top: 9px;
+  }
+  .custom-thm-breadcrumb {
+    position: relative;
+    display: block;
+  
+  }
 }
 
 /* new brands section starts  */

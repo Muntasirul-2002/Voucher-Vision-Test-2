@@ -168,7 +168,7 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
         <!--Main Slider Start-->
-        <section class="main-slider-three clearfix">
+        <!-- <section class="main-slider-three clearfix">
             <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
                 "effect": "fade",
                 "pagination": {
@@ -187,7 +187,7 @@
                     <div class="swiper-slide">
                         <div class="image-layer-three" style="background-image: url(assets/images/Banner/banner3.png);">
                         </div>
-                        <!-- /.image-layer -->
+                        
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-12">
@@ -204,7 +204,7 @@
                         <div class="image-layer-three"
                             style="background-image: url(assets/images/Banner/home-banner4.jpg);">
                         </div>
-                        <!-- /.image-layer -->
+                       
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-12">
@@ -221,7 +221,7 @@
                         <div class="image-layer-three"
                             style="background-image: url(assets/images/Banner/home-banner5.jpg);">
                         </div>
-                        <!-- /.image-layer -->
+                      
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-12">
@@ -245,7 +245,22 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
+        <section class="custom-page-header">
+            <div class="custom-carousel">
+              <div class="custom-carousel-item active" style="background-image: url('assets/images/Banner/banner3.png');"></div>
+              <div class="custom-carousel-item" style="background-image: url('assets/images/Banner/home-banner4.jpg');"></div>
+              <div class="custom-carousel-item" style="background-image: url('assets/images/Banner/home-banner5.jpg');"></div>
+            </div>
+            <div class="custom-container">
+              <div class="custom-page-header__inner">
+                  <h2 class="home__banner__title">Voucher Vision India Services Private Limited</h2>
+                <ul class="custom-thm-breadcrumb list-unstyled">
+                  <li>The Ultimate Digital Gifting Platform</li>
+                </ul>
+              </div>
+            </div>
+          </section>
         <!--Main Slider End-->
         <!--About Three Start-->
         <section class="about-three">
@@ -565,7 +580,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>   
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6">
@@ -856,6 +871,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- template js -->
     <script src="assets/js/amazepays.js"></script>
+    <!-- slider script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+           let currentIndex = 0;
+           const slides = document.querySelectorAll(".custom-carousel-item");
+         
+           function showSlide(index) {
+             slides.forEach((slide, i) => {
+               slide.classList.remove("active");
+               if (i === index) {
+                 slide.classList.add("active");
+               }
+             });
+           }
+         
+           function nextSlide() {
+             currentIndex = (currentIndex + 1) % slides.length;
+             showSlide(currentIndex);
+           }
+         
+           setInterval(nextSlide, 3000);
+         });
+      </script>
 </body>
 
 </html>
