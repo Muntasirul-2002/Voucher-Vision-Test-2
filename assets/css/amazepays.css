@@ -11787,3 +11787,31 @@ color: black;
       font-size: 1.1rem;
   }
 }
+
+/* footer policy design */
+.policy{
+  color: white;
+}
+.policy:hover{
+  color: #e94b3cff;
+}
+
+.back__to__home__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back__to__home__button{
+  background-color: #e94b3cff;
+  border: 1px solid #e94b3cff;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.back__to__home__button:hover{
+  background-color: #2d2926ff;
+  color: white;
+  border: 1px solid #2d2926ff;
+}
