@@ -1,11 +1,9 @@
 function redirectToService(service) {
-    // Redirect to gift-vouchers.html with query parameter
     window.location.href = `gift-vouchers.html?service=${service}`;
 }
 function updateTitle() {
-    // Get the query parameter from the URL
     const params = new URLSearchParams(window.location.search);
-    const service = params.get("service"); // Correctly extract the 'service' parameter
+    const service = params.get("service"); 
 
     if (service) {
         const titleElement = document.querySelector(".section-title__title");
@@ -16,7 +14,7 @@ function updateTitle() {
             } else if (service === "prepaid-card") {
                 titleText += "Prepaid Card";
             }
-            titleElement.textContent = titleText; // Update the title dynamically
+            titleElement.textContent = titleText; 
         }
     }
 }
