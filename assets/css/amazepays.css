@@ -164,7 +164,7 @@ ul {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1205px;
   }
 }
 
@@ -547,6 +547,11 @@ ul {
 }
 
 .main-header__top-address-list li .icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.main-header__top-address-list li .icon-call {
   position: relative;
   display: flex;
   align-items: center;
@@ -2043,7 +2048,7 @@ ul {
 
 .main-menu-three__main-menu-box {
   display: block;
-  margin-left: 180px;
+  margin-left: 90px;
 }
 
 .main-menu-three__right {
@@ -2114,7 +2119,7 @@ ul {
 }
 .stricky-header.main-menu-three .main-menu__list>li {
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 3rem;
 }
 .stricky-header.main-menu-three .main-menu__list__gift__voucher>li {
   padding-top: 35px;
@@ -11814,4 +11819,286 @@ color: black;
   background-color: #2d2926ff;
   color: white;
   border: 1px solid #2d2926ff;
+}
+
+/* team section design */
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.team-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.05);
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.team-position {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #333;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-image {
+    width: 150px;
+    height: 150px;
+  }
+  .social-link:hover {
+    background: #333;
+    color: white;
+    transform: translateY(-3px);
+  }
+}
+
+/* navbar dropdown design */
+/* Dropdown Button */
+.dropbtn {
+  color: #86838c;
+  cursor: pointer;
+}
+.dropbtn:hover{
+  color: #e94b3cff;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* basic infomation card design || About page */
+.company_wrapper {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.company_info_card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.company_card_header {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.company_header_title {
+  color: #e94b3cff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.company_card_content {
+  padding: 0;
+}
+
+.company_info_item {
+  display: flex;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.company_info_label {
+  width: 200px;
+  padding: 12px 15px;
+  background-color: #f8f9fa;
+  color: #2d2926ff;
+  font-weight: 500;
+  border-right: 1px solid #e9ecef;
+}
+
+.company_info_value {
+  flex: 1;
+  padding: 12px 15px;
+}
+
+.company_info_item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .company_info_item {
+      flex-direction: column;
+  }
+
+  .company_info_label {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #e9ecef;
+  }
+
+  .company_info_value {
+      background-color: white;
+  }
+}
+.contact_wrapper {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* .contact_info_card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+} */
+
+.contact_card_header {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact_header_title {
+  color: #e94b3cff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact_card_content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.contact_item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  width: calc(33.33% - 14px);
+  min-width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact_item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.contact_icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.contact_icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #e94b3cff;
+}
+
+.contact_text {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact_item {
+      width: 100%;
+  }
 }
