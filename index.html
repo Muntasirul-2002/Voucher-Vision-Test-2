@@ -93,9 +93,9 @@
                                             <span class="dropbtn">Services
                                             </span>
                                             <div id="myDropdown" class="dropdown-content">
+                                                <a href="#" onclick="redirectToService('gift-cards')">Gift Cards</a>
+                                                <a href="#" onclick="redirectToService('prepaid-card')">Prepaid Card</a>
                                                 <a href="gift-vouchers.html">Gift Vouchers</a>
-                                                <a href="gift-vouchers.html">Gift Cards</a>
-                                                <a href="gift-vouchers.html">Prepaid Card</a>
                                                 <a href="corporate-gifting.html">Corporate Gift</a>
                                             </div>
                                         </li>
@@ -796,6 +796,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <!-- template js -->
     <script src="assets/js/amazepays.js"></script>
+    <script src="assets/js/custom.js"></script>
     <!-- slider script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -818,38 +819,6 @@
 
             setInterval(nextSlide, 3000);
         });
-
-        //  dropdown function
-        // function toggleDropdown() {
-        //     const dropdown = document.getElementById("myDropdown");
-        //     dropdown.classList.toggle("show");
-        // }
-
-        // function toggleMobileMenu() {
-        //     const menu = document.getElementById("mainMenu");
-        //     menu.classList.toggle("show");
-        // }
-
-     
-        // window.onclick = function (event) {
-        //     if (!event.target.matches(".dropdown-btn")) {
-        //         const dropdowns = document.getElementsByClassName("dropdown-content");
-        //         for (let i = 0; i < dropdowns.length; i++) {
-        //             const openDropdown = dropdowns[i];
-        //             if (openDropdown.classList.contains("show")) {
-        //                 openDropdown.classList.remove("show");
-        //             }
-        //         }
-        //     }
-
-        //     if (!event.target.matches(".mobile-nav__toggler")) {
-        //         const menu = document.getElementById("mainMenu");
-        //         if (menu.classList.contains("show")) {
-        //             menu.classList.remove("show");
-        //         }
-        //     }
-        // };
-
     </script>
 </body>
 

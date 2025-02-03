@@ -90,11 +90,11 @@
                     <li class="dropdown" style="padding-bottom: 2.5rem;">
                       <span class="dropbtn">Services</span>
                       <div id="myDropdown" class="dropdown-content">
-                        <a href="gift-vouchers.html" class="current megamenu">Gift Vouchers</a>
-                        <a href="gift-vouchers.html">Gift Cards</a>
-                        <a href="gift-vouchers.html">Prepaid Card</a>
+                        <a href="#" onclick="redirectToService('gift-cards')">Gift Cards</a>
+                        <a href="#" onclick="redirectToService('prepaid-card')">Prepaid Card</a>
+                        <a href="gift-vouchers.html">Gift Vouchers</a>
                         <a href="corporate-gifting.html">Corporate Gift</a>
-                      </div>
+                    </div>
                     </li>
                     <li style="padding-bottom: 2.5rem;">
                       <a href="brands.html">Brands </a>
@@ -527,6 +527,7 @@
   <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
   <!-- template js -->
   <script src="assets/js/amazepays.js"></script>
+  <script src="assets/js/custom.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       let currentIndex = 0;
